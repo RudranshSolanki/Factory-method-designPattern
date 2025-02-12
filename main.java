@@ -3,9 +3,11 @@ import createBarbarian.createBarbarian;
 import createArcher.createArcher;
 public class main {
     public static void main(String[] args) {
-        CreaterAgent agent = new createBarbarian();
-        agent.spawnAgent();
-        agent = new createArcher();
-        agent.spawnAgent();
+        CreaterAgent brb = new createBarbarian();
+        brb.spawnAgent();
+        brb.attackAgent();
+        CreaterAgent archer = new createArcher();
+        archer.spawnAgent();
+        archer.attackAgent();
     }
 }
